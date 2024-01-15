@@ -836,7 +836,7 @@
 
 	// Skin color
 	if(current_species && (current_species.bodyflags & HAS_SKIN_COLOR))
-		preview_icon.Blend(s_colour, ICON_ADD)
+		preview_icon.Blend(s_colour, ICON_MULTIPLY)
 
 	// Skin tone
 	if(current_species && (current_species.bodyflags & HAS_SKIN_TONE))
@@ -851,7 +851,7 @@
 		var/icon_state
 		var/offset_x = 0
 		var/offset_y = 0
-		var/blend_mode = ICON_ADD
+		var/blend_mode = ICON_MULTIPLY
 		var/icon/underlay = null
 
 		if(body_accessory)
@@ -881,7 +881,7 @@
 				var/datum/sprite_accessory/body_markings/BM = GLOB.marking_styles_list[tail_marking]
 				if(BM)
 					var/icon/t_marking_s = new(BM.icon, "[BM.icon_state]_s")
-					t_marking_s.Blend(m_colours["tail"], ICON_ADD)
+					t_marking_s.Blend(m_colours["tail"], ICON_MULTIPLY)
 					temp.Blend(t_marking_s, ICON_OVERLAY)
 
 			// Body accessory has an underlay, add it too.
@@ -899,14 +899,14 @@
 			var/datum/sprite_accessory/body_marking_style = GLOB.marking_styles_list[body_marking]
 			if(body_marking_style && body_marking_style.species_allowed)
 				var/icon/b_marking_s = new/icon("icon" = body_marking_style.icon, "icon_state" = "[body_marking_style.icon_state]_s")
-				b_marking_s.Blend(m_colours["body"], ICON_ADD)
+				b_marking_s.Blend(m_colours["body"], ICON_MULTIPLY)
 				preview_icon.Blend(b_marking_s, ICON_OVERLAY)
 		if(current_species.bodyflags & HAS_HEAD_MARKINGS) //Head markings.
 			var/head_marking = m_styles["head"]
 			var/datum/sprite_accessory/head_marking_style = GLOB.marking_styles_list[head_marking]
 			if(head_marking_style && head_marking_style.species_allowed)
 				var/icon/h_marking_s = new/icon("icon" = head_marking_style.icon, "icon_state" = "[head_marking_style.icon_state]_s")
-				h_marking_s.Blend(m_colours["head"], ICON_ADD)
+				h_marking_s.Blend(m_colours["head"], ICON_MULTIPLY)
 				preview_icon.Blend(h_marking_s, ICON_OVERLAY)
 
 	var/icon/hands_icon = icon(preview_icon)
@@ -952,21 +952,21 @@
 		var/datum/sprite_accessory/head_accessory_style = GLOB.head_accessory_styles_list[ha_style]
 		if(head_accessory_style && head_accessory_style.species_allowed)
 			var/icon/head_accessory_s = new/icon("icon" = head_accessory_style.icon, "icon_state" = "[head_accessory_style.icon_state]_s")
-			head_accessory_s.Blend(hacc_colour, ICON_ADD)
+			head_accessory_s.Blend(hacc_colour, ICON_MULTIPLY)
 			face_s.Blend(head_accessory_s, ICON_OVERLAY)
 
 	var/datum/sprite_accessory/facial_hair_style = GLOB.facial_hair_styles_list[f_style]
 	if(facial_hair_style && facial_hair_style.species_allowed)
 		var/icon/facial_s = new/icon("icon" = facial_hair_style.icon, "icon_state" = "[facial_hair_style.icon_state]_s")
 		if(current_species.name == "Slime People") // whee I am part of the problem
-			facial_s.Blend("[s_colour]A0", ICON_ADD)
+			facial_s.Blend("[s_colour]A0", ICON_MULTIPLY)
 		else if(facial_hair_style.do_colouration)
-			facial_s.Blend(f_colour, ICON_ADD)
+			facial_s.Blend(f_colour, ICON_MULTIPLY)
 
 		if(facial_hair_style.secondary_theme)
 			var/icon/facial_secondary_s = new/icon("icon" = facial_hair_style.icon, "icon_state" = "[facial_hair_style.icon_state]_[facial_hair_style.secondary_theme]_s")
 			if(!facial_hair_style.no_sec_colour && facial_hair_style.do_colouration)
-				facial_secondary_s.Blend(f_sec_colour, ICON_ADD)
+				facial_secondary_s.Blend(f_sec_colour, ICON_MULTIPLY)
 			facial_s.Blend(facial_secondary_s, ICON_OVERLAY)
 
 		face_s.Blend(facial_s, ICON_OVERLAY)
