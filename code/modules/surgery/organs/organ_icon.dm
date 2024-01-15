@@ -145,7 +145,7 @@
 					if(istype(dna.species, /datum/species/slime)) // I am el worstos
 						hair_s.Blend("[owner.skin_colour]A0", ICON_AND) //A0 = 160 alpha.
 					else if(hair_style.do_colouration)
-						hair_s.Blend(hair_colour, ICON_MULTIPLY)
+						hair_s.Blend(hair_colour, ICON_ADD)
 					add_overlay(hair_s)
 
 	return mob_icon //Don't need to blend the above into this as it's handled in human/update_icons(). The overlays are for rendering stuff on disembodied heads.
