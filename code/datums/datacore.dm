@@ -19,6 +19,13 @@ GLOBAL_LIST_EMPTY(PDA_Manifest)
 	else
 		ico.Blend(ico, ICON_MULTIPLY)
 
+/proc/SpeciesContextualBlendStringComparison(var/icon/ico, var/species, var/input)
+	if(species=="Vulpkanin") //I had to snowflake IPCs until we figure out what the fuck to do with them.
+		ico.Blend(input, ICON_MULTIPLY)
+		log_debug("NIGHTMARE NIGHTMARE NIGHTMARE NIGHTMARE NIGHTMARE")
+	else
+		ico.Blend(input, ICON_ADD)
+
 
 /datum/datacore/proc/get_manifest_json()
 	if(GLOB.PDA_Manifest.len)
