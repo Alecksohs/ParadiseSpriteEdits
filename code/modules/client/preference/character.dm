@@ -792,6 +792,7 @@
 	if(gender == FEMALE)	g = "f"
 
 	var/icon/icobase
+	var/mob/living/carbon/human/curHuman
 	var/datum/species/current_species = GLOB.all_species[species]
 
 	//Icon-based species colour.
@@ -800,6 +801,8 @@
 		if(current_species.bodyflags & HAS_ICON_SKIN_TONE) //Handling species-specific icon-based skin tones by flagged race.
 			var/mob/living/carbon/human/H = new
 			H.dna.species = current_species
+			curHuman = H
+			log_debug(curHuman)
 			H.s_tone = s_tone
 			H.dna.species.updatespeciescolor(H, 0) //The mob's species wasn't set, so it's almost certainly different than the character's species at the moment. Thus, we need to be owner-insensitive.
 			var/obj/item/organ/external/chest/C = H.get_organ("chest")
@@ -836,7 +839,7 @@
 
 	// Skin color
 	if(current_species && (current_species.bodyflags & HAS_SKIN_COLOR))
-		preview_icon.Blend(s_colour, ICON_MULTIPLY)
+		SpeciesContextualBlend(preview_icon, curHuman.dna.species)
 
 	// Skin tone
 	if(current_species && (current_species.bodyflags & HAS_SKIN_TONE))

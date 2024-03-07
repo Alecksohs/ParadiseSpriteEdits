@@ -13,6 +13,12 @@ using /datum/datacore/proc/manifest_inject(), or manifest_insert()
 */
 
 GLOBAL_LIST_EMPTY(PDA_Manifest)
+/proc/SpeciesContextualBlend(var/icon/ico, var/mob/living/carbon/human/speci)
+	if(istype(speci.dna.species, /datum/species/machine)) //I had to snowflake IPCs until we figure out what the fuck to do with them.
+		ico.Blend(ico, ICON_ADD)
+	else
+		ico.Blend(ico, ICON_MULTIPLY)
+
 
 /datum/datacore/proc/get_manifest_json()
 	if(GLOB.PDA_Manifest.len)
@@ -273,7 +279,7 @@ GLOBAL_VAR_INIT(record_id_num, 1001)
 
 	// Proper Skin color - Fix, you can't have HAS_SKIN_TONE *and* HAS_SKIN_COLOR
 	if(H.dna.species.bodyflags & HAS_SKIN_COLOR)
-		preview_icon.Blend(H.skin_colour, ICON_MULTIPLY)
+		SpeciesContextualBlend(preview_icon, H.dna.species)
 
 	//Tail Markings
 	var/icon/t_marking_s
