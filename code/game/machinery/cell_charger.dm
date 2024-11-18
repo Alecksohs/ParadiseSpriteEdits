@@ -19,6 +19,7 @@
 	component_parts += new /obj/item/circuitboard/cell_charger(null)
 	component_parts += new /obj/item/stock_parts/capacitor(null)
 	RefreshParts()
+	AddComponent(/datum/component/machinery_appliance, heavy = TRUE)
 	if(!mapload)
 		return
 

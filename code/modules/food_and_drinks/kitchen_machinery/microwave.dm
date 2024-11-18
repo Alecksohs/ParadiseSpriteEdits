@@ -26,6 +26,7 @@
 	component_parts += new /obj/item/stock_parts/micro_laser(null)
 	component_parts += new /obj/item/stack/sheet/glass(null)
 	component_parts += new /obj/item/stack/cable_coil(null, 2)
+	AddComponent(/datum/component/machinery_appliance, heavy = TRUE)
 	RefreshParts()
 
 /obj/machinery/kitchen_machine/microwave/upgraded/Initialize(mapload)

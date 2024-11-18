@@ -43,7 +43,7 @@ GLOBAL_LIST_EMPTY(fax_blacklist)
 /obj/machinery/photocopier/faxmachine/Initialize(mapload)
 	. = ..()
 	GLOB.allfaxes += src
-	AddComponent(/datum/component/machinery_appliance)
+	AddComponent(/datum/component/machinery_appliance, heavy = TRUE)
 	update_network()
 
 /obj/machinery/photocopier/faxmachine/Destroy()

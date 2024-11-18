@@ -24,6 +24,7 @@
 	component_parts = list()
 	component_parts += new /obj/item/circuitboard/recharger(null)
 	component_parts += new /obj/item/stock_parts/capacitor(null)
+
 	RefreshParts()
 
 /obj/machinery/recharger/RefreshParts()
