@@ -102,6 +102,7 @@
 	component_parts += new /obj/item/stock_parts/manipulator(null)
 	component_parts += new /obj/item/stock_parts/matter_bin(null)
 	RefreshParts()
+	AddComponent(/datum/component/machinery_appliance)
 
 /obj/machinery/reagentgrinder/RefreshParts()
 	var/H
@@ -151,11 +152,6 @@
 		return
 	default_deconstruction_screwdriver(user, "juicer_open", "juicer0", I)
 
-/obj/machinery/reagentgrinder/wrench_act(mob/user, obj/item/I)
-	. = TRUE
-	if(!I.tool_use_check(user, 0))
-		return
-	default_unfasten_wrench(user, I)
 
 /obj/machinery/reagentgrinder/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/storage/part_replacer))

@@ -295,7 +295,7 @@
 		fire_particles.color = COLOR_RED
 
 	animate(fire_particles, 20 SECONDS, color = COLOR_ORANGE)
-	animate(fire_particles, 10 SECONDS, color = COLOR_GRAY, delay = 20 SECONDS)
+	//animate(fire_particles, 10 SECONDS, color = COLOR_GRAY, delay = 20 SECONDS)
 	addtimer(VARSET_CALLBACK(src, overheated, FALSE), 30 SECONDS)
 
 /obj/item/gun/medbeam/damaged/proc/attempt_repair(mob/living/user, obj/item/tool_used, next_broken_state)
