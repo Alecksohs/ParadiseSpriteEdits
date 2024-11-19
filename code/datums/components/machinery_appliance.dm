@@ -14,7 +14,7 @@
 /datum/component/machinery_appliance/proc/on_tool_act(obj/machinery/source, obj/item/tool, mob/living/user)
 	if(tool.tool_behaviour != TOOL_WRENCH)
 		return
-	. = COMPONENT_CANCEL_TOOLACT
+	. = COMPONENT_CANCEL_TOOLACT_FULL_CHAIN
 	if(!tool.use_tool(parent, user, 2, volume = tool.tool_volume))
 		return
 	STOP_PROCESSING(SSobj, source)

@@ -75,6 +75,22 @@
 	STOP_PROCESSING(SSfastprocess, src)
 	START_PROCESSING(SSmachines, src)
 
+/obj/machinery/proc/pause_processing()
+	STOP_PROCESSING(SSmachines, src)
+	STOP_PROCESSING(SSfastprocess, src)
+	change_power_mode(NO_POWER_USE)
+	return TRUE
+
+/obj/machinery/proc/resume_processing()
+	if(!speed_process)
+		START_PROCESSING(SSmachines, src)
+	else
+		START_PROCESSING(SSfastprocess, src)
+
+	reregister_machine()
+	power_change()
+	change_power_mode(initial(power_state)) // NAIVE, BUT IT WILL DO FOR NOW
+
 /obj/machinery/Destroy()
 	change_power_mode(NO_POWER_USE) //we want to clear our static power usage on the local powernet
 	machine_powernet?.unregister_machine(src)

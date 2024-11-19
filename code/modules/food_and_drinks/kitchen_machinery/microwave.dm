@@ -43,3 +43,7 @@
 	for(var/obj/item/stock_parts/micro_laser/M in component_parts)
 		E += M.rating
 	efficiency = E
+/obj/machinery/kitchen_machine/microwave/pause_processing()
+    if(operating) // i dont think this is currently tracked if a microwave is running
+        return FALSE
+    return ..()

@@ -44,6 +44,7 @@
 ///from base of [/obj/item/proc/tool_attack_chain]: (atom/tool, mob/user)
 #define COMSIG_TOOL_ATTACK "tool_attack"
 	#define COMPONENT_CANCEL_TOOLACT (1<<0)
+	#define COMPONENT_CANCEL_TOOLACT_FULL_CHAIN (1<<1)
 /// Called by [/obj/item/assembly/proc/pulse]
 #define COMSIG_ASSEMBLY_PULSED "item_assembly_pulsed"
 ///from [/mob/living/carbon/human/proc/Move]: ()

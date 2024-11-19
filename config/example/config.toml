@@ -347,7 +347,7 @@ roundstart_observer_period = 5
 # Enable twitter emojis in OOC?
 enable_ooc_emoji = true
 # Auto start the game if running a local test server
-developer_express_start = false
+developer_express_start = true
 # Minimum client build for playing the server. Keep above 1421 due to exploits
 minimum_client_build = 1421
 # Give a confirmation when pressing "Start Now". Useful for avoiding starting the live server early
