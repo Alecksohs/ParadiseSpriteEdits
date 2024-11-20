@@ -1,3 +1,7 @@
+/turf/simulated/floor/plasteel/
+	icon_state = "tile_standard"
+	floor_tile = /obj/item/stack/tile/plasteel
+
 /turf/simulated/floor/plasteel/default/standard
 	icon_state = "tile_standard"
 	floor_tile = /obj/item/stack/tile/plasteel
@@ -57,6 +61,10 @@
 /turf/simulated/floor/plasteel/goonplaque/violence
 	name = "Violence Free Area"
 	desc = "Violence Free Area"
+
+/turf/simulated/floor/plasteel/fakestairs/
+	icon = 'icons/turf/floors/materials/floors_stairs.dmi'
+	icon_state = "stairs"
 
 //TODO: Make subtypes for all normal turf icons
 /turf/simulated/floor/plasteel/white/standard
