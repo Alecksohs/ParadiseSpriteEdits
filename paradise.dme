@@ -1006,6 +1006,7 @@
 #include "code\game\objects\effects\decals\Cleanable\tracks.dm"
 #include "code\game\objects\effects\decals\turfdecals\departmental_decals.dm"
 #include "code\game\objects\effects\decals\turfdecals\dirt.dm"
+#include "code\game\objects\effects\decals\turfdecals\job_decals.dm"
 #include "code\game\objects\effects\decals\turfdecals\markings.dm"
 #include "code\game\objects\effects\decals\turfdecals\tilecoloring.dm"
 #include "code\game\objects\effects\decals\turfdecals\weather_decals.dm"

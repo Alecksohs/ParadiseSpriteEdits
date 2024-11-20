@@ -1,8 +1,8 @@
 // security decals
 /obj/effect/turf_decal/floor_markings/departmental/security
-	icon = 'icons/turf/decals/floormarkings/department/security_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/departmental/security_decals.dmi'
 	icon_state = "tile_full"
-	layer = TURF_DECAL_LAYER
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
 /obj/effect/turf_decal/floor_markings/departmental/security/directional
 	icon_state = "tile_directional"
 /obj/effect/turf_decal/floor_markings/departmental/security/corner
@@ -12,9 +12,9 @@
 
 // medical decals
 /obj/effect/turf_decal/floor_markings/departmental/medical
-	icon = 'icons/turf/decals/floormarkings/department/medical_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/departmental/medical_decals.dmi'
 	icon_state = "tile_full"
-	layer = TURF_DECAL_LAYER
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
 /obj/effect/turf_decal/floor_markings/departmental/medical/directional
 	icon_state = "tile_directional"
 /obj/effect/turf_decal/floor_markings/departmental/medical/corner
@@ -24,9 +24,9 @@
 
 // virology decals
 /obj/effect/turf_decal/floor_markings/departmental/virology
-	icon = 'icons/turf/decals/floormarkings/department/virology_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/departmental/virology_decals.dmi'
 	icon_state = "tile_full"
-	layer = TURF_DECAL_LAYER
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
 /obj/effect/turf_decal/floor_markings/departmental/virology/directional
 	icon_state = "tile_directional"
 /obj/effect/turf_decal/floor_markings/departmental/virology/corner
@@ -37,9 +37,9 @@
 // engineering decals
 /obj/effect/turf_decal/floor_markings/departmental/engineering
 	// this should be renamed probably but not now
-	icon = 'icons/turf/decals/floormarkings/department/chemistry_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/departmental/chemistry_decals.dmi'
 	icon_state = "tile_full"
-	layer = TURF_DECAL_LAYER
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
 /obj/effect/turf_decal/floor_markings/departmental/engineering/directional
 	icon_state = "tile_directional"
 /obj/effect/turf_decal/floor_markings/departmental/engineering/corner
@@ -49,12 +49,24 @@
 
 // science decals
 /obj/effect/turf_decal/floor_markings/departmental/science
-	icon = 'icons/turf/decals/floormarkings/department/science_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/departmental/science_decals.dmi'
 	icon_state = "tile_full"
-	layer = TURF_DECAL_LAYER
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
 /obj/effect/turf_decal/floor_markings/departmental/science/directional
 	icon_state = "tile_directional"
 /obj/effect/turf_decal/floor_markings/departmental/science/corner
 	icon_state = "tile_corner"
 /obj/effect/turf_decal/floor_markings/departmental/science/checker
+	icon_state = "tile_opposing_corners"
+
+// dark decals
+/obj/effect/turf_decal/floor_markings/dark
+	icon = 'icons/turf/decals/floormarkings/departmental/dark_decals.dmi'
+	icon_state = "tile_full"
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
+/obj/effect/turf_decal/floor_markings/dark/directional
+	icon_state = "tile_directional"
+/obj/effect/turf_decal/floor_markings/dark/corner
+	icon_state = "tile_corner"
+/obj/effect/turf_decal/floor_markings/dark/checker
 	icon_state = "tile_opposing_corners"

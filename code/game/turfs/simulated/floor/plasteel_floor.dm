@@ -62,17 +62,17 @@
 	name = "Violence Free Area"
 	desc = "Violence Free Area"
 
-/turf/simulated/floor/plasteel/fakestairs/
+/turf/simulated/floor/plasteel/fakestairs
 	icon = 'icons/turf/floors/materials/floors_stairs.dmi'
 	icon_state = "stairs"
 
 //TODO: Make subtypes for all normal turf icons
 /turf/simulated/floor/plasteel/white/standard
-	icon_state = "white"
+	icon_state = "tile_white_standard"
 /turf/simulated/floor/plasteel/white/side
-	icon_state = "whitehall"
+	icon_state = "tile_white_edge"
 /turf/simulated/floor/plasteel/white/corner
-	icon_state = "whitecorner"
+	icon_state = "tile_white_corner"
 
 /turf/simulated/floor/plasteel/dark/standard
 	icon_state = "tile_dark_standard"
