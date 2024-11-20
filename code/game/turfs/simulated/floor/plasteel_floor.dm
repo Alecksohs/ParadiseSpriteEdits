@@ -3,7 +3,7 @@
 	floor_tile = /obj/item/stack/tile/plasteel
 
 /turf/simulated/floor/plasteel/default/edge_tiling
-	icon_state = "tile_standard"
+	icon_state = "tile_edge"
 	floor_tile = /obj/item/stack/tile/plasteel
 
 /turf/simulated/floor/plasteel/update_icon_state()
@@ -67,7 +67,7 @@
 	icon_state = "whitecorner"
 
 /turf/simulated/floor/plasteel/dark/standard
-	icon_state = "darkfull"
+	icon_state = "tile_dark_standard"
 
 /turf/simulated/floor/plasteel/dark/standard/telecomms
 	nitrogen = 100
