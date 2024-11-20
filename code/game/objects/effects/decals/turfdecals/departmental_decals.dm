@@ -82,3 +82,16 @@
 	icon_state = "tile_corner"
 /obj/effect/turf_decal/floor_markings/dark/checker
 	icon_state = "tile_opposing_corners"
+
+// neutral decals
+
+/obj/effect/turf_decal/floor_markings/neutral
+	icon = 'icons/turf/decals/floormarkings/departmental/neutral_decals.dmi'
+	icon_state = "tile_full"
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
+/obj/effect/turf_decal/floor_markings/neutral/directional
+	icon_state = "tile_directional"
+/obj/effect/turf_decal/floor_markings/neutral/corner
+	icon_state = "tile_corner"
+/obj/effect/turf_decal/floor_markings/neutral/checker
+	icon_state = "tile_opposing_corners"
