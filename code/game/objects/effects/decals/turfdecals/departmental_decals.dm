@@ -23,7 +23,7 @@
 	icon_state = "tile_opposing_corners"
 
 // virology decals
-/obj/effect/turf_decal/departmental/virologyical
+/obj/effect/turf_decal/departmental/virology
 	icon = 'icons/turf/decals/floormarkings/department/virology_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER

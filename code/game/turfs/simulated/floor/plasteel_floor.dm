@@ -1,5 +1,9 @@
-/turf/simulated/floor/plasteel
-	icon_state = "tileStandard"
+/turf/simulated/floor/plasteel/default/standard
+	icon_state = "tile_standard"
+	floor_tile = /obj/item/stack/tile/plasteel
+
+/turf/simulated/floor/plasteel/default/edge_tiling
+	icon_state = "tile_standard"
 	floor_tile = /obj/item/stack/tile/plasteel
 
 /turf/simulated/floor/plasteel/update_icon_state()
@@ -55,22 +59,22 @@
 	desc = "Violence Free Area"
 
 //TODO: Make subtypes for all normal turf icons
-/turf/simulated/floor/plasteel/white
+/turf/simulated/floor/plasteel/white/standard
 	icon_state = "white"
 /turf/simulated/floor/plasteel/white/side
 	icon_state = "whitehall"
 /turf/simulated/floor/plasteel/white/corner
 	icon_state = "whitecorner"
 
-/turf/simulated/floor/plasteel/dark
+/turf/simulated/floor/plasteel/dark/standard
 	icon_state = "darkfull"
 
-/turf/simulated/floor/plasteel/dark/telecomms
+/turf/simulated/floor/plasteel/dark/standard/telecomms
 	nitrogen = 100
 	oxygen = 0
 	temperature = 80
 
-/turf/simulated/floor/plasteel/dark/nitrogen
+/turf/simulated/floor/plasteel/dark/standard/nitrogen
 	nitrogen = 100
 	oxygen = 0
 
