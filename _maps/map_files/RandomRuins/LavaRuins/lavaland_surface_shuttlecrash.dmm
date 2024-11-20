@@ -32,9 +32,6 @@
 "dD" = (
 /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
-"dM" = (
-/turf/template_noop,
-/area/lavaland/surface/outdoors/unexplored)
 "dS" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -574,10 +571,6 @@
 "Sj" = (
 /turf/simulated/floor/plating/lavaland_air,
 /area/ruin/unpowered/misc_lavaruin)
-"Sy" = (
-/obj/effect/mapping_helpers/lava_magnet,
-/turf/simulated/floor/lava/mapping_lava,
-/area/lavaland/surface/outdoors)
 "SH" = (
 /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface{
 	icon_state = "basalt_dug"
@@ -1025,8 +1018,8 @@ dD
 Fy
 "}
 (17,1,1) = {"
-dM
-dM
+NG
+dD
 dD
 hK
 dD
@@ -1043,11 +1036,11 @@ Et
 SH
 dD
 It
-dM
+Gt
 "}
 (18,1,1) = {"
-dM
-dM
+NG
+dD
 hK
 hK
 dD
@@ -1063,11 +1056,11 @@ mN
 Et
 Gt
 Gt
-dM
-dM
+Gt
+Gt
 "}
 (19,1,1) = {"
-dM
+dD
 hK
 hK
 hK
@@ -1084,11 +1077,11 @@ Aj
 hK
 dD
 hK
-dM
-dM
+dD
+Gt
 "}
 (20,1,1) = {"
-dM
+dD
 hK
 hK
 hK
@@ -1139,7 +1132,7 @@ hK
 hK
 hK
 hK
-Sy
+hK
 hK
 hK
 hK
@@ -1190,11 +1183,11 @@ dD
 hK
 dD
 hK
-dM
+dD
 "}
 (25,1,1) = {"
 hK
-dM
+dD
 hK
 dD
 Gt
@@ -1210,12 +1203,12 @@ cl
 Gt
 cl
 Gt
-dM
-dM
+Gt
+Gt
 "}
 (26,1,1) = {"
-dM
-dM
+Gt
+Gt
 Gt
 Gt
 wf
@@ -1232,11 +1225,11 @@ It
 It
 It
 Gt
-dM
+dD
 "}
 (27,1,1) = {"
-dM
-dM
+NG
+dD
 It
 Gt
 cl
@@ -1256,8 +1249,8 @@ dD
 NG
 "}
 (28,1,1) = {"
-dM
-dM
+NG
+dD
 dD
 Gt
 It
@@ -1277,7 +1270,7 @@ dD
 NG
 "}
 (29,1,1) = {"
-dM
+NG
 dD
 It
 Gt

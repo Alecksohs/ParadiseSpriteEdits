@@ -326,9 +326,6 @@
 /obj/structure/chair/comfy/shuttle,
 /turf/simulated/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
-"nt" = (
-/turf/simulated/wall/indestructible/titanium/nodiagonal,
-/area/shuttle/escape)
 "rj" = (
 /obj/machinery/economy/vending/wallmed/directional/east,
 /obj/structure/bed/roller,
@@ -398,7 +395,7 @@ ab
 DZ
 bb
 bf
-nt
+ab
 ab
 "}
 (3,1,1) = {"
@@ -432,7 +429,7 @@ aa
 aa
 ab
 ac
-nt
+ab
 as
 ab
 aZ
@@ -456,7 +453,7 @@ bo
 (5,1,1) = {"
 aa
 ab
-nt
+ab
 al
 ap
 at
@@ -481,7 +478,7 @@ bo
 "}
 (6,1,1) = {"
 ab
-nt
+ab
 ah
 ai
 an
@@ -533,7 +530,7 @@ aa
 "}
 (8,1,1) = {"
 ab
-nt
+ab
 aj
 ai
 an
@@ -560,7 +557,7 @@ ab
 (9,1,1) = {"
 aa
 ab
-nt
+ab
 ao
 aq
 an
@@ -588,7 +585,7 @@ aa
 aa
 ab
 ac
-nt
+ab
 at
 ab
 aA
@@ -658,7 +655,7 @@ ac
 rj
 be
 aI
-nt
+ab
 ab
 "}
 (13,1,1) = {"

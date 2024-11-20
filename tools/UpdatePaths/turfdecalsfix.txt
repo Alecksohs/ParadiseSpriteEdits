@@ -1,0 +1,1 @@
+/turf/simulated/floor/plasteel{dir=8;icon_state ="redcorner"}: /obj/effect/turf_decal/department/security/corner{dir=8}, /turf/simulated/floor/plasteel {@OLD;icon_state=@SKIP;dir=@SKIP}

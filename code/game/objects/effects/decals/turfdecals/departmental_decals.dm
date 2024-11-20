@@ -1,6 +1,6 @@
 // security decals
 /obj/effect/turf_decal/departmental/security
-	icon = 'icons/turf/decals/floormarkings/departmental/security_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/department/security_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
 /obj/effect/turf_decal/departmental/security/directional
@@ -11,8 +11,8 @@
 	icon_state = "tile_opposing_corners"
 
 // medical decals
-/obj/effect/turf_decal/departmental/medical
-	icon = 'icons/turf/decals/floormarkings/departmental/medical_decals.dmi'
+/obj/effect/turf_decal/department/medical
+	icon = 'icons/turf/decals/floormarkings/department/medical_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
 /obj/effect/turf_decal/departmental/medical/directional
@@ -24,7 +24,7 @@
 
 // virology decals
 /obj/effect/turf_decal/departmental/virologyical
-	icon = 'icons/turf/decals/floormarkings/departmental/virology_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/department/virology_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
 /obj/effect/turf_decal/departmental/virology/directional
@@ -36,7 +36,8 @@
 
 // engineering decals
 /obj/effect/turf_decal/departmental/engineering
-	icon = 'icons/turf/decals/floormarkings/departmental/engineering_decals.dmi'
+	// this should be renamed probably but not now
+	icon = 'icons/turf/decals/floormarkings/department/chemistry_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
 /obj/effect/turf_decal/departmental/engineering/directional
@@ -48,7 +49,7 @@
 
 // science decals
 /obj/effect/turf_decal/departmental/science
-	icon = 'icons/turf/decals/floormarkings/departmental/science_decals.dmi'
+	icon = 'icons/turf/decals/floormarkings/department/science_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
 /obj/effect/turf_decal/departmental/science/directional
