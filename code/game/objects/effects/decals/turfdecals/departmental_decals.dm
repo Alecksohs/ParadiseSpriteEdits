@@ -11,7 +11,7 @@
 	icon_state = "tile_opposing_corners"
 
 // medical decals
-/obj/effect/turf_decal/department/medical
+/obj/effect/turf_decal/departmental/medical
 	icon = 'icons/turf/decals/floormarkings/department/medical_decals.dmi'
 	icon_state = "tile_full"
 	layer = TURF_DECAL_LAYER
