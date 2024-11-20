@@ -59,6 +59,18 @@
 /obj/effect/turf_decal/floor_markings/departmental/science/checker
 	icon_state = "tile_opposing_corners"
 
+	// cargo decals
+/obj/effect/turf_decal/floor_markings/departmental/cargo
+	icon = 'icons/turf/decals/floormarkings/departmental/cargo_decals.dmi'
+	icon_state = "tile_full"
+	layer = ABOVE_TRANSPARENT_TURF_LAYER
+/obj/effect/turf_decal/floor_markings/departmental/cargo/directional
+	icon_state = "tile_directional"
+/obj/effect/turf_decal/floor_markings/departmental/cargo/corner
+	icon_state = "tile_corner"
+/obj/effect/turf_decal/floor_markings/departmental/cargo/checker
+	icon_state = "tile_opposing_corners"
+
 // dark decals
 /obj/effect/turf_decal/floor_markings/dark
 	icon = 'icons/turf/decals/floormarkings/departmental/dark_decals.dmi'
