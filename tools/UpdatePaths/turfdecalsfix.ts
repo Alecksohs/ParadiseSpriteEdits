@@ -52,14 +52,14 @@
 /turf/simulated/floor/plasteel{icon_state ="darkgreenfull"} : /obj/effect/turf_decal/floor_markings/departmental/virology{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
 
 /turf/simulated/floor/plasteel{icon_state ="purplecorner"} : /obj/effect/turf_decal/floor_markings/departmental/science/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="purple"} : /obj/effect/turf_decal/floor_markings/departmental/medical/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="purplefull"} : /obj/effect/turf_decal/floor_markings/departmental/medical{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="whitepurplecorner"} : /obj/effect/turf_decal/floor_markings/departmental/medical/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="whitepurple"} : /obj/effect/turf_decal/floor_markings/departmental/medical/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="whitepurplefull"} : /obj/effect/turf_decal/floor_markings/departmental/medical{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="darkpurplecorner"} : /obj/effect/turf_decal/floor_markings/departmental/medical/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="darkpurple"} : /obj/effect/turf_decal/floor_markings/departmental/medical/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
-/turf/simulated/floor/plasteel{icon_state ="darkpurplefull"} : /obj/effect/turf_decal/floor_markings/departmental/medical{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="purple"} : /obj/effect/turf_decal/floor_markings/departmental/science/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="purplefull"} : /obj/effect/turf_decal/floor_markings/departmental/science{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="whitepurplecorner"} : /obj/effect/turf_decal/floor_markings/departmental/science/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="whitepurple"} : /obj/effect/turf_decal/floor_markings/departmental/science/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="whitepurplefull"} : /obj/effect/turf_decal/floor_markings/departmental/science{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/white/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="darkpurplecorner"} : /obj/effect/turf_decal/floor_markings/departmental/science/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="darkpurple"} : /obj/effect/turf_decal/floor_markings/departmental/science/directional{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="darkpurplefull"} : /obj/effect/turf_decal/floor_markings/departmental/science{@OLD;icon_state=@SKIP;}, /turf/simulated/floor/plasteel/dark/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
 
 
 /turf/simulated/floor/plasteel{icon_state ="browncorner"} : /obj/effect/turf_decal/floor_markings/departmental/cargo/corner{@OLD;icon_state=@SKIP}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
@@ -94,6 +94,13 @@
 /turf/simulated/floor/plasteel{icon_state ="stairs-l"} : /turf/simulated/floor/plasteel/fakestairs/left {@OLD;icon_state=@SKIP;icon=@SKIP}
 /turf/simulated/floor/plasteel{icon_state ="stairs-m"} : /turf/simulated/floor/plasteel/fakestairs/center {@OLD;icon_state=@SKIP;icon=@SKIP}
 /turf/simulated/floor/plasteel{icon_state ="stairs-r"} : /turf/simulated/floor/plasteel/fakestairs/right {@OLD;icon_state=@SKIP;icon=@SKIP}
+
+/turf/simulated/floor/plasteel{dir=2;icon_state="arrival"} : /obj/effect/turf_decal/floor_markings/white/corner{@OLD;icon_state=@SKIP;dir=8}, /obj/effect/turf_decal/floor_markings/departmental/medical/corner{@OLD;icon_state=@SKIP;dir=1}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+
+
+/turf/simulated/floor/plasteel{icon_state ="arrivalcorner";dir=4} : /obj/effect/turf_decal/floor_markings/white/corner{@OLD;icon_state=@SKIP;dir=4}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+/turf/simulated/floor/plasteel{icon_state ="arrivalcorner";dir=8} : /obj/effect/turf_decal/floor_markings/white/corner{@OLD;icon_state=@SKIP;dir=8}, /turf/simulated/floor/plasteel/default/standard {@OLD;icon_state=@SKIP;dir=@SKIP}
+
 
 /turf/simulated/floor/plasteel{icon_state ="grimy"} : /turf/simulated/floor/carpet/grimey {@OLD;icon_state=@SKIP;dir=@SKIP}
 
