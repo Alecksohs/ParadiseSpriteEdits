@@ -106,6 +106,7 @@
 	icon_state = "freezerfloor"
 
 /turf/simulated/floor/plasteel/stairs
+	icon = 'icons/turf/floors/materials/floors_stairs.dmi'
 	icon_state = "stairs"
 /turf/simulated/floor/plasteel/stairs/left
 	icon_state = "stairs-l"
@@ -115,6 +116,5 @@
 	icon_state = "stairs-r"
 /turf/simulated/floor/plasteel/stairs/old
 	icon_state = "stairs-old"
-
 /turf/simulated/floor/plasteel/grimy
 	icon_state = "grimy"
