@@ -64,6 +64,9 @@
 
 
 
+
+
+
 /turf/simulated/floor/plasteel/fakestairs
 	icon = 'icons/turf/floors/materials/floors_stairs.dmi'
 	icon_state = "stairs"
@@ -72,7 +75,7 @@
 	icon_state = "stairs-l"
 
 /turf/simulated/floor/plasteel/fakestairs/center
-	icon_state = "stairs-c"
+	icon_state = "stairs-m"
 
 /turf/simulated/floor/plasteel/fakestairs/right
 	icon_state = "stairs-r"

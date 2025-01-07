@@ -11,6 +11,7 @@
 
 /turf/simulated/floor/mineral
 	name = "mineral floor"
+	icon = 'icons/turf/floors/materials/floors_ores.dmi'
 	icon_state = ""
 	var/list/icons = list()
 

@@ -4753,7 +4753,7 @@
 /turf/simulated/floor/plasteel,
 /area/tdome/arena)
 "pX" = (
-/turf/simulated/floor/plasteel/dark/nitrogen,
+/turf/simulated/floor/plasteel/dark/standard/nitrogen,
 /area/centcom/specops)
 "pY" = (
 /obj/machinery/door/airlock/centcom{

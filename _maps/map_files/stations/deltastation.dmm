@@ -65643,7 +65643,7 @@
 	},
 /area/station/security/brig)
 "eGq" = (
-/turf/simulated/floor/plasteel/dark/nitrogen{
+/turf/simulated/floor/plasteel/dark/standard/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -78157,7 +78157,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel/dark/nitrogen{
+/turf/simulated/floor/plasteel/dark/standard/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -83227,7 +83227,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
-/turf/simulated/floor/plasteel/dark/nitrogen{
+/turf/simulated/floor/plasteel/dark/standard/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -97313,7 +97313,7 @@
 	c_tag = "Xeno Kill Room";
 	network = list("Research","SS13")
 	},
-/turf/simulated/floor/plasteel/dark/nitrogen{
+/turf/simulated/floor/plasteel/dark/standard/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
@@ -98787,7 +98787,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel/dark/nitrogen{
+/turf/simulated/floor/plasteel/dark/standard/nitrogen{
 	temperature = 80
 	},
 /area/station/science/xenobiology)
