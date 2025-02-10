@@ -214,3 +214,7 @@ DEFINE_BITFIELD(status_flags, list(
 	"GODMODE" = GODMODE,
 	"TERMINATOR_FORM" = TERMINATOR_FORM,
 ))
+
+DEFINE_BITFIELD(car_traits, list(
+	"CAN_KIDNAP" = CAN_KIDNAP,
+))

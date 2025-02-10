@@ -32,6 +32,9 @@
 #define MOB_SHARED_COOLDOWN_2 (1<<1)
 #define MOB_SHARED_COOLDOWN_3 (1<<2)
 
+// Clown Car Cooldown
+#define COOLDOWN_CLOWNCAR_RANDOMNESS "clown_car_randomness"
+
 //TIMER COOLDOWN MACROS
 
 #define COMSIG_CD_STOP(cd_index) "cooldown_[cd_index]"

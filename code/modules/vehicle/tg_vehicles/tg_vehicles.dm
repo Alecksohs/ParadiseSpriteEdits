@@ -14,11 +14,13 @@
 	pass_flags = PASSTABLE
 	COOLDOWN_DECLARE(message_cooldown)
 	COOLDOWN_DECLARE(cooldown_vehicle_move)
+	COOLDOWN_DECLARE(enginesound_cooldown)
 	var/list/mob/occupants //mob = bitflags of their control level.
 	///Maximum amount of passengers plus drivers
 	var/max_occupants = 1
 	////Maximum amount of drivers
 	var/max_drivers = 1
+	var/car_traits = NONE
 	/**
 	  * If the driver needs a certain item in hand (or inserted, for vehicles) to drive this. For vehicles, this must be duplicated on their riding component subtype
 	  * [/datum/component/riding/var/keytype] variable because only a few specific checks are handled here with this var, and the majority of it is on the riding component
@@ -35,6 +37,8 @@
 	///This vehicle will follow us when we move (like atrailer duh)
 	var/obj/tgvehicle/trailer
 	var/are_legs_exposed = FALSE
+	///Whether or not headlights are on
+	var/headlights_toggle = FALSE
 
 /obj/tgvehicle/Initialize(mapload)
 	. = ..()
@@ -97,6 +101,7 @@
 /obj/tgvehicle/proc/return_drivers()
 	return return_controllers_with_flag(VEHICLE_CONTROL_DRIVE)
 
+
 /obj/tgvehicle/proc/driver_amount()
 	return return_amount_of_controllers_with_flag(VEHICLE_CONTROL_DRIVE)
 
@@ -122,6 +127,42 @@
 /obj/tgvehicle/proc/auto_assign_occupant_flags(mob/M) //override for each type that needs it. Default is assign driver if drivers is not at max.
 	if(driver_amount() < max_drivers)
 		add_control_flags(M, VEHICLE_CONTROL_DRIVE)
+		return
+	if(car_traits & CAN_KIDNAP)
+		add_control_flags(M,VEHICLE_CONTROL_KIDNAPPED)
+		return
+
+/obj/tgvehicle/proc/mob_exit(mob/M, silent = FALSE, randomstep = FALSE)
+	if(!istype(M))
+		return FALSE
+	remove_occupant(M)
+	if(!is_ai(M))//This is the ONE mob we don't want to be moved to the vehicle that should be handled when used
+		M.forceMove(drop_location(M))
+	else
+		return TRUE
+	if(randomstep)
+		var/turf/target_turf = get_step(drop_location(M), pick(GLOB.cardinal))
+		M.throw_at(target_turf, 5, 10)
+
+	if(!silent)
+		M.visible_message("<span class='notice'>[M] drops out of \the [src]!</span>")
+	if(!istype(M,/mob/living))
+		var/mob/living/livingmob = M
+		if(livingmob.buckled)
+			livingmob.unbuckle(force=TRUE)
+	return TRUE
+
+/obj/tgvehicle/proc/dump_specific_mobs(flag, randomstep = TRUE)
+	for(var/i in occupants)
+		if(!(occupants[i] & flag))
+			continue
+		mob_exit(i, randomstep = randomstep)
+		if(iscarbon(i))
+			var/mob/living/carbon/C = i
+			C.Paralyse(40)
+
+/obj/tgvehicle/proc/mob_try_exit(mob/M, mob/user, silent = FALSE, randomstep = FALSE)
+	mob_exit(M, silent, randomstep)
 
 /obj/tgvehicle/proc/remove_occupant(mob/M)
 	SHOULD_CALL_PARENT(TRUE)
@@ -232,3 +273,9 @@
 /obj/tgvehicle/zap_act(power, zap_flags)
 	zap_buckle_check(power)
 	return ..()
+
+/obj/tgvehicle/proc/mob_forced_enter(mob/kidnapped, silent = FALSE)
+	if(!silent)
+		kidnapped.visible_message("<span class='warning'>[kidnapped] is forced into \the [src]!</span>")
+	kidnapped.forceMove(src)
+	add_occupant(kidnapped, VEHICLE_CONTROL_KIDNAPPED)
