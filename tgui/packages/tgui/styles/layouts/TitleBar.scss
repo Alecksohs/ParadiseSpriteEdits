@@ -8,15 +8,14 @@
 @use '../colors.scss';
 
 $text-color: rgba(255, 255, 255, 0.75) !default;
-$background-color: #363636 !default;
-$shadow-color-core: #161616 !default;
-$shadow-color: rgba(0, 0, 0, 0.1) !default;
+$background-color: hsl(340, 39%, 25%) !default;
+$shadow-color-core: hsl(0, 70%, 4%) !default;
+$shadow-color: rgba(0, 0, 0, 0.2) !default;
 
 .TitleBar {
   background-color: $background-color;
-  border-bottom: 1px solid $shadow-color-core;
-  box-shadow: 0 2px 2px $shadow-color;
-  box-shadow: 0 base.rem(2px) base.rem(2px) $shadow-color;
+  //border-bottom: 1px solid $shadow-color-core;
+  box-shadow: 0 base.rem(0px) base.rem(6px) $shadow-color;
   user-select: none;
   -ms-user-select: none; // TODO: Remove with 516
 }
