@@ -185,6 +185,8 @@
 	name = "cheap carpet"
 	icon_state = "tile-carpet-royalblack"
 	turf_type = /turf/simulated/floor/carpet/grimey
+/obj/item/stack/tile/carpet/grimey/twenty
+	amount = 20
 
 /obj/item/stack/tile/carpet/red
 	name = "red carpet"
